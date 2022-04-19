@@ -1,2 +1,2 @@
 # ebac-fullstack
-Curso de FullStack com Python pela Escola de Artes e Tecnologia
+Curso de FullStack com Python pela Escola Britânica de Artes e Tecnologia
