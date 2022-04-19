@@ -1,0 +1,101 @@
+html {
+    font-family: monospace, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(198, 198, 198, 0.928);
+    overflow: scroll;
+}
+
+main {
+    background-color: #492A81;
+    width: 96vw;
+    padding: 20px;
+
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #EE5425;
+}
+
+main h1 {
+    text-align: left;
+    font-size: 2.4em;
+    padding-left: 5px;
+    margin: auto;
+}
+
+section div {
+    text-align: center;
+}
+
+section div img {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 86px;
+    border-bottom-right-radius: 266px;
+    border-bottom-left-radius: 80px;
+}
+
+.container {
+    display: flex;
+}
+  
+.item {
+    flex-basis: 100%;
+    align-content: center;
+}
+
+@media screen and (max-width: 784px) {
+    img {
+        width: 100%;
+    }
+}
+
+#conteudo h2 {
+   margin-top: 100px;
+
+
+}
+
+h2 {
+    color: #492A81;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    border-style: none;
+    text-decoration: none;
+}
+
+#botao {
+    text-align: center;
+}
+
+#botao p a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    font-weight: 500;
+
+    background-color: #EE5425;
+    color: white;
+
+    padding: 15px 25px 15px 25px;
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#botao p {
+    margin: 20px auto;
+}
+
+footer {
+    margin-top: 40px;
+}

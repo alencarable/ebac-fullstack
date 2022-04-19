@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(198, 198, 198, 0.928);
+    overflow: scroll;
+}
+
+main {
+    display: flex;
+
+    margin-top: 15px;
+}
+
+.column {
+    flex: 50%;
+}
+
+#profile img {
+    background-color: cornflowerblue;
+
+    width: 200px;
+    height: 200px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+}
+
+main div, article div {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+main div h1, main div p {
+    text-align: right;
+    font-size: 1.4em;
+}
+
+main div h1 {
+    font-size: 1.8em;
+}
+
+main div p {
+    background-color: #00FF99;
+}
+
+.container {
+    display: flex;
+}
+  
+.item {
+    flex-basis: 100%;
+    align-content: center;
+
+    margin: 0px 0px 0px 0px;
+}
+
+article div h2 {
+    background-color: #ce8888;
+    padding: 10px;
+}
+
+article div p {
+    background-color: #ce8888;
+    padding: 2px 5px 2px 5px;
+
+    text-align: justify;
+}
+
+#qrCode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+}
+
+#qrCode img {
+    width: 50%;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+div {
+    padding: 20px;
+    margin: 0px;
+}
+
+.width-100 {
+    width: 100%;
+    width: 99vw; /* viweport width*/
+    background-color: #adff2f;
+    padding: 20px 0px;
+    height: 400px;
+
+    margin: 0px 0px 0px 8px;
+}
+
+nav {
+    background-color: #5f9ea0;
+
+    width: 20%;
+    float: left;
+    display: table;
+    height: 30%;
+}
+
+div nav h3 {
+    margin: 5px 5px;
+    padding: 5px;
+
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: #adff2f;
+}
+
+a:visited {
+    color: rgba(0, 0, 255, 0.731);
+}
+
+li {
+    font-size: 1.2em;
+    margin: 5px auto 3px 10px;
+}
+
+article {
+    width: 80%;
+    float: left;
+}
+
+footer {
+    background-color: #777;
+    text-align: center;
+    color: white;
+    margin: 0px 0px 0px 8px;
+
+    width: 99vw
+}
+
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }

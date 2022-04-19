@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: antiquewhite;
+    overflow: scroll;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+div {
+    padding: 20px;
+    margin: 0px;
+}
+
+.width-100 {
+    width: 100%;
+    width: 98vw; /* viweport width*/
+    background-color: greenyellow;
+    padding: 20px 0px;
+    height: 400px;
+}
+
+nav {
+    background-color: cadetblue;
+
+    width: 20%;
+    float: left;
+    display: table;
+    height: 100%;
+}
+
+article {
+    width: 80%;
+    float: left;
+    box-sizing: border-box; /*Considera o padding e border na largura e altura*/
+}
+
+.fixed-width {
+    background-color: coral;
+    width: 200px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.background {
+    background-image: url(images/pattern.png);
+    background-color: lightpink;
+    background-repeat: repeat-x;
+
+    width: 94%;
+    height: 18vh;
+}
+
+div img {
+    width: 100%;
+}

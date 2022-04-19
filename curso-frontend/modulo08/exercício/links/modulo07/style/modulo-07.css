@@ -1,0 +1,199 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: monospace, sans-serif;
+	color: #333333;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(198, 198, 198, 0.928);
+    overflow: scroll;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #00FF99;
+	color: #000000;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+#change-color:hover {
+	color: #93AFFA;
+	background: #000000;
+}
+
+a {
+	color: #555555;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+	background: #93AFFA;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+    font-family: monospace, sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: monospace, sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: bold 1.2em monospace, sans-serif;
+
+	padding: 3px;
+	
+	color: black;
+	background-color: #5f9ea0;
+}
+
+nav h3 {
+	max-width: 45px;
+}
+
+article h3 {
+	max-width: 130px;
+}
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background-color: rgba(198, 198, 198, 0.928);
+}
+
+section {
+	background-color: #adff2f;
+}
+
+p {
+	color: blue;
+	color: #034589;
+}
+
+header,
+footer {
+	background-color: #777;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: #5f9ea0;
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	color: #adff2f;
+}
+
+.navegacao li a:visited {
+    color: rgba(0, 0, 255, 0.731);
+}

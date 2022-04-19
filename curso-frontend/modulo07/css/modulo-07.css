@@ -1,0 +1,84 @@
+/*
+
+	Herança
+
+	1. Sobreposição - Sobrescreve a regra que foi definida anteriormente.
+	2. Aplica a último estilo definido
+	3. Prioriza estilos específicos (com seletores mais próximos)
+
+*/
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+/*
+
+	Combinadores
+
+	- (espaço) seletor descendente
+	- (>) combinador de seletores filhos
+	- (+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	- (~) combinador de elementos irmãos de modo geral / após o elemento de referência (o que vêm antes do combinador)
+
+*/
+
+header h2 {
+	font-weight: 100;
+}
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #FF0;
+	color: black;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+/*
+
+	Pseudo-classes (:)
+
+*/
+
+a {
+	color: #555555;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+a:visited {
+	background: #f00;
+}
+
+a:active {
+	color: #0f0;
+}
+
+a:hover {
+	color: #009;
+	background: #eee;
+}
+
+h2:hover {
+	color: #888;
+}

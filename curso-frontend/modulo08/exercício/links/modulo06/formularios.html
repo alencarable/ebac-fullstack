@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulários</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+
+		<header>
+			<h2 id="titulo">Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul id="navegacao">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1 class="intro">Contato</h1>
+				<p class="intro">Preencha os campos abaixo</p>
+
+				<form method="post">
+					
+					<div class="cascata">
+						<label for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite aqui">
+					</div>
+
+					<div class="cascata">
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email" placeholder="Digite aqui">
+					</div>
+
+					<div class="cascata">
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite aqui"></textarea>
+					</div>
+
+					<div class="cascata">
+						<p>
+							<label>Quais linguagens você prefere?</label>
+							<input type="radio" name="linguagens" value="html"> HTML
+							<input type="radio" name="linguagens" value="css"> CSS
+							<input type="radio" name="linguagens" value="javascript"> JavaScript
+							<input type="radio" name="linguagens" value="python"> Python
+						</p>
+					</div>
+
+					<div class="cascata">
+						<p>
+							<label>Quais linguagens você sabe?</label>
+							<input type="checkbox" name="linguagens" value="html"> HTML
+							<input type="checkbox" name="linguagens" value="css"> CSS
+							<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+							<input type="checkbox" name="linguagens" value="python"> Python
+						</p>
+					</div>
+
+					<div class="cascata">
+						<label>Qual a sua cor favorita</label>
+						<select>
+							<option value="azul" selected>Azul</option>
+							<option value="verde">Verde</option>
+							<option value="preto">Preto</option>
+						</select>
+					</div>
+
+					<div id="submit">
+						<input type="submit" id="buttom">
+					</div>
+				</form>
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Pedro Alencar.</p>
+		</footer>
+		
+	</body>
+</html>
