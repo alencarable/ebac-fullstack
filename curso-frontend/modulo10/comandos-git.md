@@ -17,3 +17,6 @@ são ramificações / versões paralelas
 - develop (apenas para atividades de desenvolvimento, testes)
 - DOD Definition of Done: critérios de aceite
 - versionamento 0.1.10
+
+### Merge
+Mescla de branchs
