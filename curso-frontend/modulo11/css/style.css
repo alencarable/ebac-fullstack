@@ -128,6 +128,10 @@ section article {
     width: 70%;
 }
 
+.cog-abuse, .cog-wrapper, .cog-branding, .cog-branding--minimal {
+    visibility: hidden;
+}
+
 footer {
     background-color: #254159;
     color: #ffffff;
