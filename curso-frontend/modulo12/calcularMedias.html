@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <style>
+            html {
+                font-size: 62,5%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            body {
+                background-color: #333333;
+            }
+            
+            main {
+                background-color: #ffffff;
+                
+                margin: auto;
+                padding: 5px 3px 10px 3px;
+                border-radius: 8px;
+
+                min-width: 320px;
+                max-width: 768px;
+            }
+
+            h1, p, div {
+                text-align: center;
+            }
+
+            span {
+                display: block;
+                margin: 10px;
+            }
+
+            input {
+                border-radius: 6px;
+                
+                display: block;
+                margin: 2px auto;
+                padding: 2px;
+
+                text-align: center;
+            }
+
+            button {
+                display: block;
+                margin: 20px auto 4px auto;
+
+                font-size: 1em;
+                padding: 10px;
+                border-radius: 20px;
+
+                background-color: blanchedalmond;
+            }
+
+            button:hover {
+                color: #ffffff;
+                background-color: cadetblue;
+            }
+
+            #resultado {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>
+            Jogo das médias!
+            </h1>
+
+            <p>
+            Insira 3 (três) números nos campos abaixo e descubra a média deles &#129504;
+            </p>
+
+            <div>
+                <span>
+                    <label>Insira o primeiro número!</label>
+                    <input type="text" id="num1">
+                </span>
+                <span>
+                    <label>Insira o segundo número!</label>
+                    <input type="text" id="num2">
+                </span>
+            
+                <span>
+                    <label>Agora o terceiro número!</label>
+                    <input type="text" id="num3">
+                </span>
+            </div>
+            <button onclick="calculaMedia()">Resultado</button>
+            <div id="resultado">
+
+            </div>
+        </main>
+
+        <script>
+            function calculaMedia() {
+                var num1 = parseInt(document.getElementById("num1").value)
+                var num2 = parseInt(document.getElementById("num2").value)
+                var num3 = parseInt(document.getElementById("num3").value)
+
+                var media = (num1 + num2 + num3) / 3
+
+                document.getElementById("resultado").innerHTML = "A média é: " + media
+            }
+            
+        </script>
+    </body>
+</html>
