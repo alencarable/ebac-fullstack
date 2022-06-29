@@ -1,0 +1,53 @@
+#logo {
+    margin: 10px auto;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.card {
+    width: 31%;
+    float: left;
+    margin: 5px;
+}
+
+a {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+}
+
+#webpageimage {
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #042502;
+    color: #ffffff;
+
+    display: block;
+    float: left;
+    width: 100%;
+
+    padding: 13px;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+footer small {
+    font-size: 80%;
+    display: block; /* Para quebrar a linha */
+}
+
+@media (max-width: 766px) {
+    #webpageimage {
+        margin-top: 15px;
+    }
+}
