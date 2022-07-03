@@ -1,5 +1,14 @@
-#logo {
+#logo, ul {
     margin: 10px auto;
+}
+
+#titulos {
+    width: fit-content;
+}
+
+#carouselExampleFade {
+    width: 80%;
+    margin: auto;
 }
 
 section {
@@ -8,7 +17,7 @@ section {
 }
 
 .card {
-    width: 31%;
+    width: 31.5%;
     float: left;
     margin: 5px;
 }
@@ -49,5 +58,11 @@ footer small {
 @media (max-width: 766px) {
     #webpageimage {
         margin-top: 15px;
+    }
+
+    .card {
+        width: 50%;
+        float: none;
+        margin: 10px auto;
     }
 }

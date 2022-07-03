@@ -1,0 +1,8 @@
+textarea.form-control {
+    width: 100% !important;
+    display: block !important;
+}
+
+#caixa {
+    margin: 5px auto !important;
+}

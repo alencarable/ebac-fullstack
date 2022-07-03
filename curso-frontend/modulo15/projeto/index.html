@@ -20,8 +20,10 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <h1 id="logo">Arts & Culture</h1>
+                </div>
+                <div class="col-md-8 col-sm-12">
                     <ul class="nav justify-content-end">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
@@ -33,11 +35,63 @@
         </div>
     </header>
 
+    <section id="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/Guerra.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <h5>Guerra - Portinari, Candido. (1952-1956) </h5>
+                        <a class="btn btn-secondary stretched-link" data-bs-toggle="modal" data-bs-target="#alert">Conheça mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-1x1">
+                        <img src="images/Paz.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                        <h5>Paz - Portinari, Candido. (1952-1956) </h5>
+                        <a class="btn btn-secondary stretched-link" data-bs-toggle="modal" data-bs-target="#alert">Conheça mais</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <div class="modal alert alert-danger" tabindex="-1" id="alert">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Site de terceiros!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Você está prestes a acessar um site de terçeiros.</p>
+            <p>Deseja continuar?</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-primary stretched-link" href="https://pt.wikipedia.org/wiki/Guerra_e_Paz_(Candido_Portinari)" target="_blank">Acessar site</a>
+            <a class="btn btn-secondary stretched-link" href="./index.html">Voltar</a>
+        </div>
+        </div>
+    </div>
+    </div>
+
     <section id="sobre">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <h1>Sobre nós</h1>
+                    <h1 class="text-bg-dark p-1" id="titulos">Sobre nós</h1>
                     <p>Somos uma junção de sensações e experiências ligado à arte. Venha conhecer nossos pacotes únicos e sinta-se imerso no mundo da arte. Abaixo estão algumas de nossas master sensation experience. Ficou interessado ou quer saber mais? Assine nossa newsletter e receba em primeria mão nossa imersão semanal do mundo da arte.</p>
                     <a class="btn btn-lg btn-success" href="#contato">Assine aqui!</a>
                 </div>
@@ -53,7 +107,7 @@
             <div class="row">
                 <div class="col">
 
-                    <h2>Experiências</h2>
+                    <h2 class="text-bg-dark p-1" id="titulos">Experiências</h2>
 
                     <div class="card">
                         <img src="images/Johannes_Vermeer_(1632-1675)_-_The_Girl_With_The_Pearl_Earring_(1665).jpeg" alt="" class="img-fluid">
@@ -136,18 +190,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <h2>Newsletter</h2>
+                    <h2 class="text-bg-dark p-1" id="titulos">Newsletter</h2>
                     <p>Ficou intressado? Assine nossa newsletter e receba em primeira mão nosso folhetim cultural semanal.</p>
                 </div>
                 <div class="col">
                     <form class="form">
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu Nome">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu Nome" required>
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="agora seu Email">
+                            <input class="form-control" type="text" name="email" placeholder="agora seu Email" required>
                         </div>
 
                         <div class="input-goup">
@@ -194,7 +248,7 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a class="btn btn-primary stretched-link" href="cadastro.html">Compre aqui</a>
                 </div>
             </div>
         </div>
@@ -208,5 +262,11 @@
     </footer>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const myCarouselElement = document.querySelector('#carouselExampleFade')
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 5000
+        })
+    </script>
 </body>
 </html>
